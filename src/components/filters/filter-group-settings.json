@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_filters_filter_group_settings",
+  "info": {
+    "displayName": "Filter_Group",
+    "icon": "filter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Filter_Group_Name": {
+      "type": "string",
+      "required": false,
+      "unique": false
+    },
+    "Group_Range": {
+      "type": "integer"
+    },
+    "Variables": {
+      "type": "component",
+      "repeatable": true,
+      "component": "filters.variable"
+    },
+    "Group_Include": {
+      "type": "boolean",
+      "required": true
+    }
+  }
+}

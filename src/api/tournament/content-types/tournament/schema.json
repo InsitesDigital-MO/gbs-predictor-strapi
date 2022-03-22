@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tournaments",
+  "info": {
+    "singularName": "tournament",
+    "pluralName": "tournaments",
+    "displayName": "Tournaments",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Tournament_Name": {
+      "type": "string"
+    },
+    "Tournament_Info": {
+      "type": "string"
+    },
+    "Tournament_Start": {
+      "type": "datetime"
+    },
+    "Tournament_End": {
+      "type": "datetime"
+    },
+    "Tour": {
+      "type": "enumeration",
+      "enum": [
+        "PGA Tour",
+        "European Tour"
+      ],
+      "default": "PGA Tour"
+    },
+    "Filter": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::tournament-filter.tournament-filter"
+    },
+    "Live": {
+      "type": "boolean"
+    }
+  }
+}

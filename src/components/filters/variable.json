@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_filters_variables",
+  "info": {
+    "displayName": "Variables",
+    "icon": "address-book",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Variable_Name": {
+      "type": "string"
+    },
+    "Variable_Include": {
+      "type": "boolean"
+    },
+    "Variable_Weight": {
+      "type": "integer"
+    }
+  }
+}
