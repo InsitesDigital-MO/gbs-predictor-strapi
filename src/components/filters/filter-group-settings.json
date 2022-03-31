@@ -7,12 +7,12 @@
   },
   "options": {},
   "attributes": {
-    "Filter_Group_Name": {
+    "Parent_Name": {
       "type": "string",
       "required": false,
       "unique": false
     },
-    "Group_Range": {
+    "Parent_Range": {
       "type": "integer"
     },
     "Variables": {
@@ -20,9 +20,8 @@
       "repeatable": true,
       "component": "filters.variable"
     },
-    "Group_Include": {
-      "type": "boolean",
-      "required": true
+    "Parent_Weight": {
+      "type": "integer"
     }
   }
 }

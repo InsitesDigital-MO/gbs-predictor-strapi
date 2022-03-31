@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_data_imported_variables",
+  "info": {
+    "displayName": "Imported_Variables",
+    "icon": "angry"
+  },
+  "options": {},
+  "attributes": {
+    "Variable": {
+      "type": "json"
+    }
+  }
+}

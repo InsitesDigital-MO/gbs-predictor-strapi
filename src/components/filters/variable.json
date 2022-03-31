@@ -7,14 +7,8 @@
   },
   "options": {},
   "attributes": {
-    "Variable_Name": {
+    "Child_Name": {
       "type": "string"
-    },
-    "Variable_Include": {
-      "type": "boolean"
-    },
-    "Variable_Weight": {
-      "type": "integer"
     }
   }
 }

@@ -32,13 +32,17 @@
       ],
       "default": "PGA Tour"
     },
-    "Filter": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::tournament-filter.tournament-filter"
-    },
     "Live": {
       "type": "boolean"
+    },
+    "Player_List": {
+      "type": "json"
+    },
+    "Imported_Variables": {
+      "displayName": "Imported_Variables",
+      "type": "component",
+      "repeatable": true,
+      "component": "data.imported-variables"
     }
   }
 }

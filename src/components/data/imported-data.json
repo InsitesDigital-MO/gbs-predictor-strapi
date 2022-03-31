@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_data_imported_data",
+  "info": {
+    "displayName": "Imported_Data",
+    "icon": "ad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Player_List": {
+      "type": "json"
+    },
+    "Variable_Data": {
+      "type": "component",
+      "repeatable": true,
+      "component": "data.variable-data"
+    }
+  }
+}

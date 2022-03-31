@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "variable_filters",
+  "info": {
+    "singularName": "variable-filter",
+    "pluralName": "variable-filters",
+    "displayName": "Variable_Filter",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Event_Form": {
+      "type": "component",
+      "repeatable": false,
+      "component": "filters.filter-group-settings"
+    },
+    "Current_Form": {
+      "type": "component",
+      "repeatable": false,
+      "component": "filters.filter-group-settings"
+    },
+    "Scoring": {
+      "type": "component",
+      "repeatable": false,
+      "component": "filters.filter-group-settings"
+    },
+    "Event_Specific": {
+      "type": "component",
+      "repeatable": false,
+      "component": "filters.filter-group-settings"
+    }
+  }
+}

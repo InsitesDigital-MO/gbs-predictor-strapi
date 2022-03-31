@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_filters_variable_data",
+  "info": {
+    "displayName": "Variable_Data",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Variable": {
+      "type": "json"
+    }
+  }
+}
