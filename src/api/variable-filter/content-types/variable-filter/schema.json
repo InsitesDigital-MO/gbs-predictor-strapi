@@ -31,6 +31,14 @@
       "type": "component",
       "repeatable": false,
       "component": "filters.filter-group-settings"
+    },
+    "Tournament": {
+      "type": "string"
+    },
+    "Driving_Accuracy": {
+      "type": "component",
+      "repeatable": false,
+      "component": "filters.filter-group-settings"
     }
   }
 }
