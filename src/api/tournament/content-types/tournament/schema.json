@@ -13,16 +13,20 @@
   "pluginOptions": {},
   "attributes": {
     "Tournament_Name": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Tournament_Info": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "Tournament_Start": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
     "Tournament_End": {
-      "type": "datetime"
+      "type": "datetime",
+      "required": true
     },
     "Tour": {
       "type": "enumeration",
@@ -30,27 +34,36 @@
         "PGA Tour",
         "European Tour"
       ],
-      "default": "PGA Tour"
+      "default": "PGA Tour",
+      "required": true
     },
     "Live": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": true
     },
     "Player_List": {
-      "type": "json"
+      "type": "json",
+      "required": true
     },
     "Imported_Variables": {
       "displayName": "Imported_Variables",
       "type": "component",
       "repeatable": true,
-      "component": "data.imported-variables"
+      "component": "data.imported-variables",
+      "required": true
     },
     "Tournament_Icon": {
       "type": "media",
       "multiple": false,
-      "required": false,
+      "required": true,
       "allowedTypes": [
         "images"
       ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "Tournament_Name",
+      "required": true
     }
   }
 }
