@@ -11,12 +11,16 @@ module.exports = createCoreController(
   ({ strapi }) => ({
     async findOneBySlug(ctx) {
       const { slug } = ctx.params;
+      const { query } = ctx;
 
-      console.log("slug :: ", ctx);
-
-      const entity = await strapi.query("api::tournament.tournament").findOne({
+      const args = {
         where: { slug: slug },
-      });
+        populate: query?.populate === "*" ? true : { ...query?.populate },
+      };
+
+      const entity = await strapi
+        .query("api::tournament.tournament")
+        .findOne(args);
       const sanitizedEntity = await this.sanitizeOutput(entity, ctx);
 
       return this.transformResponse(sanitizedEntity);
